@@ -1,0 +1,24 @@
+{
+  "name": "prog-test",
+  "version": "0.0.1",
+  "description": "Testing ProgVis",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "progvis": "^0.1.2"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "greenido",
+    "progvis",
+    "tasks-managment"
+  ]
+}
