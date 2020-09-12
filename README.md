@@ -16,7 +16,7 @@ It's really short and simple 😃
 On the front-end,
 - You should open [ProgVis Web UI](https://progvis.com/) and see your jobs.
 
-### Example of the Web UI
+## Example of the Web UI
 ![](https://github.com/greenido/progVisTest/blob/master/imgs/work-example-1.png)
 
 ### Be strong 🏄🏼‍♂️
