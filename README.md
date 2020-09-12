@@ -1,7 +1,7 @@
 # ProgVis 'Hello World' Example
 
 ProgVis is a simple to use tool for instrumenting cron and other long running batch jobs so you can easily track their progress and state.
-You can read more about it [in this repo: github.com/pashasadri/progvis-node](https://github.com/pashasadri/progvis-node)
+You can read more about it at: [github.com/pashasadri/progvis-node](https://github.com/pashasadri/progvis-node)
 
 * [ProgVis Web UI](https://progvis.com/)
     
