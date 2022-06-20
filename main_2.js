@@ -9,22 +9,21 @@
 import ProgVis from "progvis";
 import fs from "fs";
 const PROG_TOKEN = fs.readFileSync('.env', {encoding:'utf8', flag:'r'});
-
-//
+ 
 // The main 'run' that manage our 'long' process
 //
 async function run() {
   
-    console.log(process.env);
     // Things are any blocks of work you wish to 'work' on.
-    const things = Array.from({length: 1000}, () => Math.floor(Math.random() * 500));
+    const things = Array.from({length: 400}, () => Math.floor(Math.random() * 100));
+    //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 20, 30, 40, 50];
 
     // The special token you get in order to communicate with the service
     const opts = { "token": PROG_TOKEN };
 
     // Let's start the new ProgVis Constructor
     const pv = new ProgVis(
-      "Fetching HR information -- " + Math.floor(Math.random() * 100),
+      "Fetching GHG information -- " + Math.floor(Math.random() * 100),
       things.length,
       opts
     );
@@ -56,13 +55,13 @@ async function process(thing) {
     const randTimeout = Math.floor(Math.random() * 10000);
     setTimeout(function () {
       console.log(
-        "🍾 Fetching the data " +
+        "🍾 doing some interesting work on " +
           thing +
           " -- for: " +
           randTimeout +
           " ms."
       );
-      resolve("-- Done fetching & ETLing. After: " + randTimeout + " | " + new Date());
+      resolve("-- Done after: " + randTimeout + " | " + new Date());
     }, randTimeout);
   });
 }
