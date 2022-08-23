@@ -10,12 +10,13 @@ import ProgVis from "progvis";
 import fs from "fs";
 const PROG_TOKEN = fs.readFileSync('.env', {encoding:'utf8', flag:'r'});
 
+console.log("🎉 starting with token: " + PROG_TOKEN);
+
 //
 // The main 'run' that manage our 'long' process
 //
 async function run() {
   
-    console.log(process.env);
     // Things are any blocks of work you wish to 'work' on.
     const things = Array.from({length: 1000}, () => Math.floor(Math.random() * 500));
 
@@ -30,7 +31,7 @@ async function run() {
     );
 
   try {
-    for (let j = 0; j < things.length; j++) {
+    for (let j = 1; j < things.length; j++) {
       // The real/long work we are doing is inside 'process'
       const result = await process(things[j]);
 
